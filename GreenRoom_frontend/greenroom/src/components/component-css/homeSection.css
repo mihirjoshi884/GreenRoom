@@ -1,0 +1,40 @@
+
+.home-section{
+    height: 50vh;
+    width: 100vw;
+    background-color: azure;
+    padding-top: 40px; /* Adjust this value based on your navbar height */
+    padding-left: 0px;
+    padding-bottom: 20px; /* Adjust this value for bottom spacing */
+    padding-right: 10px;
+}
+.getting-started p {
+    position: relative;
+    top: 5px;
+    left: 700px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #3CB371;
+    text-transform: capitalize;
+}
+.login-signup-button {
+    background-color: rgb(194, 229, 133);
+    position: relative;
+    border-radius: 10px;
+    border-color: rgb(194, 229, 133);
+    top: 160px;
+    left: 1050px;
+    min-height: 60px;
+    min-width: 200px;
+    font-size: 19px; /* Adjust the font size as needed */
+    color: #556B2F;
+    font-weight: 700;
+}
+.login-signup-button:hover{
+    background-color: azure;
+    font-weight: 700;
+    color: black !important;
+    text-decoration: underline; 
+    transition: 0.6s;
+}
+
