@@ -1,0 +1,12 @@
+number 1 The authentication Filter from Reading the Bearer Token passes a BearerTokenAuthenticationToken
+ to the AuthenticationManager which is implemented by ProviderManager.
+
+number 2 The ProviderManager is configured to use an AuthenticationProvider of type JwtAuthenticationProvider.
+
+number 3 JwtAuthenticationProvider decodes, verifies, and validates the Jwt using a JwtDecoder.
+
+number 4 JwtAuthenticationProvider then uses the JwtAuthenticationConverter to convert the Jwt into
+ a Collection of granted authorities.
+
+number 5 When authentication is successful, the Authentication that is returned is of type
+ JwtAuthenticationToken and has a principal that is the Jwt returned by the configured JwtDecoder. Ultimately, the returned JwtAuthenticationToken will be set on the SecurityContextHolder by the authentication Filter.
